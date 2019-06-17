@@ -1,0 +1,76 @@
+
+body{
+  background-color: lightslategrey;
+  font-family: 'Oxygen', sans-serif;
+  backface-visibility: hidden; /* prevents shaking */
+}
+
+h2{
+  text-align: left;
+
+}
+
+#test{
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 60px;
+
+  animation-name: moveRight;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+#test2{
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+
+  
+  animation-name: moveLeft;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveRight{
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+
+  80%{
+    transform: translateY(30px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveLeft{
+  0% {
+    opacity: 0;
+    transform: translateY(600px);
+  }
+
+  80%{
+    transform: translateY(-50px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+#foot{
+  text-align: center;
+}
+
+  
+
+
